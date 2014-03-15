@@ -6,7 +6,6 @@ from flask import Flask, jsonify, send_file
 from .processes import poll_processes, processes_to_dict
 
 app = Flask(__name__)
-app.config['DEBUG'] = True
 
 def track_system_resources(meters, interval=1):
     """
